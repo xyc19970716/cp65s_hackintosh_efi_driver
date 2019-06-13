@@ -1,0 +1,42 @@
+
+Clover EFI installer log - Fri Jun  7 02:29:26 PDT 2019
+Installer version: v2.4k r4945 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk0
+   1:                        EFI NO NAME                 313.5 MB   disk0s1
+   2:       Microsoft Basic Data WIN10                   64.4 GB    disk0s2
+   3:           Windows Recovery                         1.0 GB     disk0s3
+   4:       Microsoft Basic Data                         77.7 GB    disk0s4
+   5:       Microsoft Basic Data                         8.5 GB     disk0s5
+   6:       Microsoft Basic Data 软件程序                53.7 GB    disk0s6
+   7:       Microsoft Basic Data                         354.3 GB   disk0s7
+   8:       Microsoft Basic Data                         354.3 GB   disk0s8
+   9:                 Apple_APFS Container disk1         85.9 GB    disk0s9
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +85.9 GB    disk1
+                                 Physical Store disk0s9
+   1:                APFS Volume MacOS                   12.4 GB    disk1s1
+   2:                APFS Volume Preboot                 45.6 MB    disk1s2
+   3:                APFS Volume Recovery                516.9 MB   disk1s3
+   4:                APFS Volume VM                      4.3 GB     disk1s4
+
+Target volume /Volumes/MacOS on disk1 is APFS on physical store disk0s9
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4945/2019-06-07-02h29/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
